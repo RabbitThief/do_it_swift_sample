@@ -48,10 +48,10 @@ class ViewController: UIViewController {
         
         formatter.dateFormat = "HH:mm"
         if formatter.string(from: date as Date) == alarmTime {
-            view.backgroundColor = UIColor.red
+            view.backgroundColor = UIColor.systemRed
             isAlarmRed = true
         } else if isAlarmRed {
-            view.backgroundColor = UIColor.white
+            view.backgroundColor = UIColor.systemFill
             isAlarmRed = false
         }
     }
